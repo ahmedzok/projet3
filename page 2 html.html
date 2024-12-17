@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        color: rgb(189, 118, 12);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style de base pour les boutons radio */
+      input[type="radio"] {
+        width: 30px; /* Agrandir la largeur */
+        height: 30px; /* Agrandir la hauteur */
+        appearance: none; /* Enlever le style par défaut */
+        border-radius: 50%; /* Rendre le bouton circulaire */
+        border: 3px solid #007bff; /* Bordure du bouton */
+        background-color: white; /* Couleur de fond */
+        cursor: pointer; /* Changer le curseur quand on survole le bouton */
+        transition: all 0.3s ease; /* Animation de transition */
+      }
+
+      /* Lorsque le bouton est sélectionné (coché) */
+      input[type="radio"]:checked {
+        background-color: #007bff; /* Couleur du fond quand coché */
+        border-color: #0056b3; /* Changer la bordure quand coché */
+      }
+
+      /* Ajout d'un effet lors du survol */
+      input[type="radio"]:hover {
+        border-color: #0056b3;
+      }
+      input[type="checkbox"] {
+        width: 30px; /* Agrandir la largeur */
+        height: 30px; /* Agrandir la hauteur */
+        appearance: none; /* Enlever le style par défaut */
+        border-radius: 50%; /* Rendre le bouton circulaire */
+        border: 3px solid #007bff; /* Bordure du bouton */
+        background-color: white; /* Couleur de fond */
+        cursor: pointer; /* Changer le curseur quand on survole le bouton */
+        transition: all 0.3s ease; /* Animation de transition */
+      }
+    </style>
+    <link rel="stylesheet" href="my style.css" />
+    <script>
+      function goto1() {
+        window.location.href = "page3 html.html";
+        if ((document.getElementById("1").checked = false)) {
+          alert("please You must agree to the terms");
+        }
+      }
+
+      function clearRadioButtons() {
+        var radios = document.getElementsByName("a");
+        for (var i = 0; i < radios.length; i++) {
+          radios[i].checked = false; // إلغاء التحديد لجميع الأزرار
+        }
+      }
+    </script>
+  </head>
+  <body>
+      <form action="">
+    <label for="">name :</label> <br /><input type="text" name="" id="" />
+    <br /><br />
+    <label for="">last name:</label> <br /><input
+      type="text"
+      id="2"
+    /><br /><br />
+    <label for="">your age: </label> <br /><input
+      type="text"
+      id="2"
+    /><br /><br />
+    <label for="">genre </label><br />
+    <input type="radio" id="1" id="2" name="a" /><br />
+    <h1>F</h1>
+    <input type="radio" id="1" id="2" name="a" /><br />
+    <h1>M</h1>
+    <br /><br />
+    
+    </button>
+    <label for="">your phone nummber</label> <br /><input
+      type="text"
+      id="2"
+    /><br /><br />
+    <input type="radio" id="1" id="2" /><label for=""
+      >"I agree to all the terms and respect them."</label
+    ><br /><br />
+    <input type="reset" value="delete" /><br /><br />
+    <input type="button" value="It has been done" onclick="goto1()" />
+</form>
+  </body>
+</html>
